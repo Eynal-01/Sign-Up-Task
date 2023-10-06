@@ -52,11 +52,22 @@ $(document).ready(function () {
     })
     $("#myButton").click(function () {
         let name = $("#name").val();
+        var orangeBack = $("#orange").css("background-color");
         if ($("#name").val().trim() == "" || $("#email").val().trim() == "" || $("#pass").val().trim() == "") {
             alert("Fill required sections");
         }
         else {
-            alert(`Welcome ${name}`);
+            if (orangeBack == "rgb(255, 165, 0)") {
+                if ($("#email").val().includes("@gmail.com")) {
+                    alert(`Welcome ${name}`);
+                }
+                else {
+                    alert("Email is incorrect");
+                }
+            }
+            else {
+                alert("Enter stronger password");
+            }
         }
     });
 })
