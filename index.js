@@ -60,6 +60,7 @@ $(document).ready(function () {
             if (orangeBack == "rgb(255, 165, 0)") {
                 if ($("#email").val().includes("@gmail.com")) {
                     alert(`Welcome ${name}`);
+                    location.reload();
                 }
                 else {
                     alert("Email is incorrect");

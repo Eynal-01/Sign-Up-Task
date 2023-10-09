@@ -1,99 +1,121 @@
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   user-select: none;
 }
-body{
-  min-height: 100vh;
+
+body {
+  max-height: 100vh;
   width: 100%;
   background: #009579;
+  text-align: center;
 }
-.container{
+
+#header {
+  color: white;
+  align-self: center;
+  margin-top: 50px;
+  font-size: 2.4em;
+}
+
+#signup {
+  color:rgb(61, 61, 61)
+}
+
+.container {
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   max-width: 430px;
   width: 100%;
   background: #fff;
   border-radius: 7px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
-#red{
-    width:24%;
-    height:5px;
-    background-color: rgb(240, 240, 240);
-    display: inline-block;
-    border-radius: 3px;
+#red {
+  width: 24%;
+  height: 5px;
+  background-color: rgb(240, 240, 240);
+  display: inline-block;
+  border-radius: 3px;
 }
 
-#orange{
-    width:24%;
-    height:5px;
-    background-color: rgb(240, 240, 240);
-    display: inline-block;
-    border-radius: 3px;
+#orange {
+  width: 24%;
+  height: 5px;
+  background-color: rgb(240, 240, 240);
+  display: inline-block;
+  border-radius: 3px;
 }
 
-#yellow{
-    width:24%;
-    height:5px;
-    background-color: rgb(240, 240, 240);
-    display: inline-block;
-    border-radius: 3px;
+#yellow {
+  width: 24%;
+  height: 5px;
+  background-color: rgb(240, 240, 240);
+  display: inline-block;
+  border-radius: 3px;
 }
 
-#green{
-    width:24%;
-    height:5px;
-    background-color: rgb(240, 240, 240);
-    display: inline-block;
-    border-radius: 3px;
+#green {
+  width: 24%;
+  height: 5px;
+  background-color: rgb(240, 240, 240);
+  display: inline-block;
+  border-radius: 3px;
 }
 
-#check:checked ~ .registration{
+#check:checked~.registration {
   display: block;
 }
-#check:checked ~ .login{
+
+#check:checked~.login {
   display: none;
 }
-#check{
+
+#check {
   display: none;
 }
-.container .form{
+
+.container .form {
   padding: 2rem;
 }
-.form header{
+
+.form header {
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
   margin-bottom: 1.5rem;
 }
- .form input{
-   height: 60px;
-   width: 100%;
-   padding: 0 15px;
-   font-size: 17px;
-   margin-bottom: 1.3rem;
-   border: 1px solid #ddd;
-   border-radius: 6px;
-   outline: none;
- }
 
-.form a{
+.form input {
+  height: 60px;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 17px;
+  margin-bottom: 1.3rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+.form a {
   font-size: 16px;
   color: #009579;
   text-decoration: none;
 }
-.form a:hover{
+
+.form a:hover {
   text-decoration: underline;
 }
-.form input.button{
+
+.form input.button {
   color: #fff;
   background: #009579;
   font-size: 1.2rem;
@@ -103,17 +125,21 @@ body{
   cursor: pointer;
   transition: 0.4s;
 }
-.form input.button:hover{
+
+.form input.button:hover {
   background: #006653;
 }
-.signup{
+
+.signup {
   font-size: 17px;
   text-align: center;
 }
-.signup label{
+
+.signup label {
   color: #009579;
   cursor: pointer;
 }
-.signup label:hover{
+
+.signup label:hover {
   text-decoration: underline;
 }
